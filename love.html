@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dapney Sorry napo plls?</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 25%, #ff9a9e 50%, #fecfef 75%, #ffeaa7 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 8s ease infinite;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 25px;
+            padding: 50px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15), 0 0 20px rgba(233, 30, 99, 0.3);
+            text-align: center;
+            max-width: 700px;
+            margin: 20px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(233, 30, 99, 0.2);
+        }
+
+        .avatar {
+            margin-bottom: 25px;
+        }
+
+        .avatar-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #e91e63;
+            box-shadow: 0 10px 20px rgba(233, 30, 99, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .avatar-img:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            color: #e91e63;
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .message {
+            background: linear-gradient(135deg, #fff 0%, #f8f9ff 100%);
+            padding: 35px;
+            border-radius: 20px;
+            margin: 25px 0;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+            border-left: 6px solid #e91e63;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .message::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #e91e63, #ff4081, #e91e63);
+            background-size: 200% 100%;
+            animation: shimmer 2s linear infinite;
+        }
+
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+
+        .message p {
+            font-size: 1.6em;
+            line-height: 1.8;
+            color: #2c3e50;
+            margin: 0;
+            font-weight: 500;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .music-player {
+            margin: 35px 0;
+            padding: 25px;
+            background: linear-gradient(135deg, rgba(233, 30, 99, 0.15) 0%, rgba(255, 64, 129, 0.15) 100%);
+            border-radius: 20px;
+            border: 2px solid rgba(233, 30, 99, 0.2);
+            box-shadow: 0 10px 20px rgba(233, 30, 99, 0.1);
+        }
+
+        audio {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .hearts {
+            font-size: 2em;
+            color: #e91e63;
+            margin: 20px 0;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        .btn {
+            background: linear-gradient(45deg, #e91e63, #ff4081);
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1em;
+            cursor: pointer;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(233, 30, 99, 0.4);
+        }
+
+        /* Mobile responsive styles */
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+                margin: 10px;
+            }
+            
+            h1 {
+                font-size: 2.8em;
+            }
+            
+            .message p {
+                font-size: 1.8em;
+                line-height: 1.6;
+            }
+            
+            .btn {
+                font-size: 1.2em;
+                padding: 15px 30px;
+            }
+            
+            .hearts {
+                font-size: 2.5em;
+            }
+            
+            .avatar-img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            
+            .message p {
+                font-size: 2em;
+                line-height: 1.5;
+            }
+            
+            .container {
+                padding: 25px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="avatar">
+            <img src="/picnilove" alt="Love Avatar" class="avatar-img">
+        </div>
+        
+        <h1>💕 Dapney my loves, sorry napo 💕</h1>
+        
+        <div class="hearts">💖 💝 💖</div>
+        
+        <div class="message" id="messageContainer">
+            <p>Loading love message...</p>
+        </div>
+
+        <div class="music-player">
+            <h3>🎵 Para Sa'yo 🎵</h3>
+            <audio controls autoplay loop>
+                <source src="/music/parasayo.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <button class="btn" onclick="loadMessage()">💌 Load Love Message</button>
+        <button class="btn" onclick="showRandomHeart()">❤️ Send Love</button>
+    </div>
+
+    <script>
+        async function loadMessage() {
+            try {
+                const response = await fetch('/context');
+                const data = await response.json();
+                document.getElementById('messageContainer').innerHTML = `<p>${data.message}</p>`;
+            } catch (error) {
+                console.error('Error loading message:', error);
+                document.getElementById('messageContainer').innerHTML = '<p>Error loading message. Please try again.</p>';
+            }
+        }
+
+        function showRandomHeart() {
+            const hearts = ['💖', '💕', '💗', '💝', '💘', '💞', '💓', '💟', '❤️', '🧡', '💛', '💚', '💙', '💜', '🤍', '🖤'];
+            const randomHeart = hearts[Math.floor(Math.random() * hearts.length)];
+            
+            const heartElement = document.createElement('div');
+            heartElement.textContent = randomHeart;
+            heartElement.style.position = 'fixed';
+            heartElement.style.fontSize = '2em';
+            heartElement.style.left = Math.random() * window.innerWidth + 'px';
+            heartElement.style.top = window.innerHeight + 'px';
+            heartElement.style.animation = 'float 3s ease-in-out';
+            heartElement.style.pointerEvents = 'none';
+            heartElement.style.zIndex = '1000';
+            
+            document.body.appendChild(heartElement);
+            
+            setTimeout(() => {
+                heartElement.remove();
+            }, 3000);
+        }
+
+        // Add floating animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes float {
+                0% {
+                    transform: translateY(0) rotate(0deg);
+                    opacity: 1;
+                }
+                100% {
+                    transform: translateY(-100vh) rotate(360deg);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Create floating heart particles
+        function createFloatingHearts() {
+            const hearts = ['💖', '💕', '💗', '💝', '💘', '💞'];
+            
+            for (let i = 0; i < 3; i++) {
+                setTimeout(() => {
+                    const heart = document.createElement('div');
+                    heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+                    heart.style.position = 'fixed';
+                    heart.style.fontSize = '1.5em';
+                    heart.style.left = Math.random() * window.innerWidth + 'px';
+                    heart.style.top = window.innerHeight + 'px';
+                    heart.style.animation = 'floatUp 8s linear infinite';
+                    heart.style.pointerEvents = 'none';
+                    heart.style.zIndex = '1';
+                    heart.style.opacity = '0.7';
+                    
+                    document.body.appendChild(heart);
+                    
+                    setTimeout(() => {
+                        if (heart.parentNode) {
+                            heart.remove();
+                        }
+                    }, 8000);
+                }, i * 2000);
+            }
+        }
+
+        // Add continuous floating hearts
+        const floatStyle = document.createElement('style');
+        floatStyle.textContent = `
+            @keyframes floatUp {
+                0% {
+                    transform: translateY(0) rotate(0deg);
+                    opacity: 0.7;
+                }
+                50% {
+                    opacity: 0.9;
+                }
+                100% {
+                    transform: translateY(-110vh) rotate(360deg);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(floatStyle);
+
+        // Load message on page load and start floating hearts
+        window.onload = function() {
+            loadMessage();
+            createFloatingHearts();
+            setInterval(createFloatingHearts, 6000); // Create new hearts every 6 seconds
+        };
+    </script>
+</body>
+</html>
